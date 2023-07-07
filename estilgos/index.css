@@ -1,0 +1,146 @@
+ :root {
+     --cor-primaria: #001C30;
+     --cor-secundaria: #DAFFFB;
+     --cor-terciaria: #64CCC5;
+
+     --fonte-primaria: "Arial Rounded MT", sans-serif;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     box-sizing: border-box;
+     background-color: var(--cor-primaria);
+     color: var(--cor-secundaria);
+ }
+
+ .apresentacao {
+     padding: 5% 15%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .cabecalho {
+     padding: 3% 0% 0% 48%;
+
+ }
+
+ .cabecalho__menus {
+     display: flex;
+     gap: 28.1rem;
+ }
+
+ .cabecalho__menu__link {
+     font-size: 1.8rem;
+     text-decoration: none;
+     color: var(--cor-terciaria);
+     font-family: var(--fonte-primaria);
+     width: 12.5rem;
+ }
+
+ .apresentacao__site {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     gap: 2.5rem;
+ }
+
+ .titulo {
+     font-size: 4.3rem;
+     animation-name: changeColor;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     text-align: center;
+     font-family: var(--fonte-primaria);
+ }
+
+ @keyframes changeColor {
+     0% {
+         color: red;
+     }
+
+     50% {
+         color: aqua;
+     }
+
+     100% {
+         color: greenyellow;
+     }
+ }
+
+ .sub__titulo {
+     text-align: center;
+     font-family: var(--fonte-primaria);
+     color: var(--cor-terciaria);
+ }
+
+ .imagem__conteudo {
+     width: 25rem;
+     height: 25rem;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+ }
+
+ .primeiro__paragrafo {
+     font-size: 1.8rem;
+     text-align: center;
+     font-family: var(--fonte-primaria);
+ }
+
+ .segundo__paragrafo {
+     font-size: 1.8rem;
+     text-align: center;
+     font-family: var(--fonte-primaria);
+ }
+
+ .terceiro__paragrafo {
+     font-size: 1.8rem;
+     text-align: center;
+     font-family: var(--fonte-primaria);
+ }
+
+ .frase {
+     font-size: 1.8rem;
+     text-align: center;
+     font-family: var(--fonte-primaria);
+ }
+
+ strong {
+     color: var(--cor-terciaria);
+ }
+
+ .botoes__jogos {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .jogos__link {
+     text-decoration: none;
+     font-size: 1.8rem;
+     margin: 5px;
+     background-color: var(--cor-primaria);
+     border-radius: 1.8rem;
+     color: var(--cor-secundaria);
+     padding: 1.3rem;
+     font-family: var(--fonte-primaria);
+ }
+
+ .jogos__link:hover {
+     background-color: #545B77
+ }
+
+ @media (max-width: 1200px) {
+     .cabecalho {
+         padding: 10%;
+     }
+
+     .cabecalho__menus {
+         justify-content: center;
+     }
+
+ }
