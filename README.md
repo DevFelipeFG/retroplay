@@ -1,5 +1,5 @@
-# retroplay
+# RetroPlay
 RetroPlay é um site de jogos retrô
 
 
-Estou trabalhando nesse projeto!
+> Status do projeto: Em desenvolvimento!
